@@ -28,37 +28,7 @@ jQuery(function ($) {
 		$('.navbar-collapse').collapse('hide');
 	});
 	
-	// Screenshot Slider
-	$('.screenshot-slider').owlCarousel({
-		loop: true,
-		nav: false,
-		dots: true,
-		autoplayHoverPause: true,
-		autoplay: true,
-		smartSpeed: 1000,
-		margin: 30,
-		navText: [
-			"<i class='flaticon-curve-arrow'></i>",
-			"<i class='flaticon-curve-arrow-1'></i>"
-		],
-		responsive: {
-			0: {
-				items: 1
-			},
-			576: {
-				items: 1
-			},
-			768: {
-				items: 2
-			},
-			1024: {
-				items: 5
-			},
-			1200: {
-				items:6
-			}
-		}
-	});
+	
 
 	// Feedback Carousel
 	var $imagesSlider = $(".testimonials-slides .client-feedback>div"),
