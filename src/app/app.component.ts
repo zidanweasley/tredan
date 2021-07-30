@@ -27,12 +27,6 @@ export class AppComponent implements OnInit {
     }
 
     recallJsFuntions() {
-        this.router.events
-        .subscribe((event) => {
-            if ( event instanceof NavigationStart ) {
-                $('.preloader').fadeIn('slow');
-            }
-        });
         this.routerSubscription = this.router.events
         .pipe(filter(event => event instanceof NavigationEnd || event instanceof NavigationCancel))
         .subscribe(event => {
