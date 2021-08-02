@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "apzie-ng": {
+    "treedan": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -89,18 +89,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "apzie-ng:build"
+            "browserTarget": "treedan:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "apzie-ng:build:production"
+              "browserTarget": "treedan:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "apzie-ng:build"
+            "browserTarget": "treedan:build"
           }
         },
         "test": {
@@ -137,15 +137,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "apzie-ng:serve"
+            "devServerTarget": "treedan:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "apzie-ng:serve:production"
+              "devServerTarget": "treedan:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "apzie-ng"
+  "defaultProject": "treedan"
 }

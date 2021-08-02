@@ -15,7 +15,7 @@ module.exports = function (config) {
       clearContext: false
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, './coverage/apzie-ng'),
+      dir: require('path').join(__dirname, './coverage/treedan'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
